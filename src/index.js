@@ -1,10 +1,11 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import App from './components/App'
 
-ReactDOM.render(
-    <div className='container'>
-        <h1>0</h1>
-        <button>+</button>
-    </div>,
-    document.getElementById('root')
-)
+let count = 0
+
+const increase = () => {
+    console.log('I got clicked!')
+}
+
+ReactDOM.render(<App />, document.getElementById('root'))
